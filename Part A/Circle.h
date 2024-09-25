@@ -1,11 +1,11 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-#include "Circle.h"
-#include "Shape.h"
+#include "Shape.h" // Ensure that this path is correct
+#include <string>
 
-class Circle : public Shape{
-private: 
+class Circle{ // "Circle" class name should match
+private:
     double radius;
 public:
     // Constructor
@@ -18,7 +18,7 @@ public:
     double area() const;
     double perimeter() const;
 
-    // Getters 
+    // Getters
     double getRadius() const;
 
     // Setters
@@ -27,4 +27,5 @@ public:
     // Display function
     void display() const;
 };
+
 #endif // CIRCLE_H
