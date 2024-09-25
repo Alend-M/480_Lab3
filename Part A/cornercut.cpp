@@ -9,8 +9,8 @@ CornerCut::CornerCut( double x, double y, double width, double height, double ra
     Shape(name, x, y),
     Circle(x, y, radius, name)
     {
-        // check if the radius is greater than half of the width or height
-        if (radius > width/2 || radius > height/2){
+        // check if the radius is greater than the smaller of the width or height
+        if (radius > std::min(width, height)){
             std::cout << "\nInvalid radius for the given width and height. Exiting program." << std::endl;
             exit(1);
         }
