@@ -21,6 +21,8 @@ public:
     const char* getName() const;
     void display() const;
     void move(double dx, double dy);
+    virtual double area() const = 0;
+    virtual double perimeter() const = 0;
 
     // Distance functions
     double distance(Shape& other);

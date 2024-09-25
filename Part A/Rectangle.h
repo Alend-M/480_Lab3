@@ -12,10 +12,10 @@ public:
     Rectangle(double x, double y, double side_a, double side_b, const char* name);
 
     // Area calculation
-    double area() const;
+    double area() const override;
 
     // Perimeter calculation
-    double perimeter() const;
+    double perimeter() const override;
 
     // Getters
     double getSideB() const;

@@ -4,7 +4,8 @@
 
 // Constructor
 Rectangle::Rectangle(double x, double y, double side_a, double side_b, const char* name)
-: Square(x, y, side_a, name){
+: Square(x, y, side_a, name),
+Shape(name, x, y) {
     this->side_b = side_b;
 }
 

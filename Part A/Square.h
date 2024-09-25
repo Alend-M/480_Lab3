@@ -3,7 +3,7 @@
 
 #include "Shape.h"  
 
-class Square : public Shape {
+class Square : public virtual Shape {
 private:
     double side_a;
 
@@ -12,8 +12,8 @@ public:
     Square(double x, double y, double side, const char* name);
 
     // Member functions
-    double area() const;
-    double perimeter() const;
+    double area() const override;
+    double perimeter() const override;
 
     // Getters and setters
     double getSideA() const;

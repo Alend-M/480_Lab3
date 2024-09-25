@@ -1,22 +1,18 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-#include "Shape.h" // Ensure that this path is correct
-#include <string>
+#include "Shape.h"
 
-class Circle{ // "Circle" class name should match
+class Circle : public virtual Shape{ // "Circle" class name should match
 private:
     double radius;
 public:
     // Constructor
-    Circle(const char* name, double x, double y, double radius);
-
-    // Destructor
-    ~Circle();
+    Circle( double x, double y, double radius,const char* name);
 
     // Member functions
-    double area() const;
-    double perimeter() const;
+    double area() const override;
+    double perimeter() const override;
 
     // Getters
     double getRadius() const;

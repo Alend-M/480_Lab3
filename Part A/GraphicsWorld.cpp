@@ -58,7 +58,7 @@ void GraphicsWorld::run() {
     cout << "The perimeter of " << rc.getName() << " is: " << rc.perimeter();
     d = rc.distance(c);
     cout << "\nThe distance between rc and c is: " << d;
-#if 0
+#if 1
     // Using array of Shape pointers:
     Shape *sh[4];
     sh[0] = &s;
